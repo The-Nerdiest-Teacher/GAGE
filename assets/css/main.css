@@ -1984,9 +1984,9 @@ section,
     transform: rotate(360deg);
   }
 }
-img{
+/*img{
   border: double 7px #114828;
-}
+}*/
 H1{
   font-family: "Viga", sans-serif;
   font-weight: 400;
