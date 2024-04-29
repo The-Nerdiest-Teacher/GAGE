@@ -1998,8 +1998,8 @@ H1{
 }
 
 
-element.style {
-}
+
+
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
