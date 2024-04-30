@@ -1984,9 +1984,9 @@ section,
     transform: rotate(360deg);
   }
 }
-img{
+/*img{
   border: double 7px #114828;
-}
+}*/
 H1{
   font-family: "Viga", sans-serif;
   font-weight: 400;
@@ -2000,8 +2000,6 @@ H1{
 }
 
 
-element.style {
-}
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
