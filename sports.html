@@ -67,6 +67,7 @@
     letter-spacing: 15px;
     font-size: 75px;
     grid-column: 3;
+    padding-bottom: 20px;
   }
 
   .my-5 {
@@ -109,7 +110,24 @@
     padding: 60px 0 0 0;
   }
 
-
+  @media (max-width: 1024px) {
+    .my-5 {
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 35% 65%;
+      height: 100vh;
+    }
+    .HeroIMG {
+      grid-row: 2;
+      grid-column: span 3;
+      width: 90%;
+    }
+    .paragraphContainer {
+      grid-column: 2;
+    }
+  }
+  @media (max-width: 560px) {
+    
+  }
 </style>
 
 </head>
@@ -149,11 +167,11 @@
   
     <div class="px-4 py-5 my-5 text-center">
   
-    <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
-    <div class="paragraphContainer">
-      <h1 class="display-5 fw-bold text-body-emphasis AthleticH1">Athletics</h1>
-      <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
-    </div>
+      <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
+      <div class="paragraphContainer">
+        <h1 class="display-5 fw-bold text-body-emphasis AthleticH1">Athletics</h1>
+        <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
+      </div>
     </div>
     <div class="white1"></div>
     <div class="white2"></div>
