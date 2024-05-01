@@ -9,7 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/flag.png" rel="icon">
   <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -37,39 +37,37 @@
 
 
 
-  
+  <!--Style fait par Cameron-->
  <style>
-    .calendar {
-      height: 1000px;
-      width: 100vw;
-      border: whitesmoke solid 50px;
-    }
 
     .container1 {
-      padding: 50px;
-      width: 100%;
+      padding-right: 100px;
+      padding-left: 100px;
+      width: 100vw;
+      height: 100%;
       display: flex;
       justify-content: center;
+background: rgb(240,236,226);
+background: linear-gradient(90deg, rgba(240,236,226,1) 0%, rgba(245,245,245,1) 5%, rgba(255,255,255,1) 95%, rgba(240,236,226,1) 100%);
+
     }
 
-    .left-side {
-      background-color: white;
-      height: 600px;
-      width: 263px;
-      position: absolute;
+    .outlook {
+      width: 90vw;
+      height: 900px;
     }
 
-    .right-side {
-      left: 1470px;
-      height: 600px;
-      width: 265px;
-      background-color: white;
-      position: absolute;
-    }
+    @media (max-width: 1200px) {
+      .container1 {
+        padding-right: 0px;
+        padding-left: 0px;
+        background: #f0ece2;
+      }
 
-    .egg {
-      border: 0px;
-      width: 200px;
+      .outlook {
+        width: 700px;
+      }
+
     }
   </style>
 </head>
@@ -134,16 +132,12 @@
 
     </section><!-- /Events Section -->
     <div class="container1">
-      <div id='calendar'>
-        <div class="left-side"></div>
-        <div class="right-side"></div>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&bgcolor=%23ffffff&showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=ZWNvbGVnYWdlQGdtYWlsLmNvbQ&src=bnFpc2QwZzRzODVndjIxbXFjaGRycGU3ODRwYzBrNWtAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043&color=%238E24AA" style="border:solid 1px #777" width="1800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
+      <iframe class="outlook" src=https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/ebeedc63-0181-44d1-a7e8-2b454488bee8/cid-9E30083132D1F9AA/index.html></iframe>
     </div>
-    <button class="egg"></button>
+    <p></p>
   </main>
 
-  <footer id="footer" class="footer position-relative">
+  <footer id="footer" class="footer position-relative"><!--footer-->
 
     <div class="container footer-top">
       <div class="row gy-4">
