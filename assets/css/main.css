@@ -1146,7 +1146,7 @@ section,
 }
 
 .features .features-item h3 a {
-  color: var(--heading-color);
+  color: #114828;
   transition: 0.3s;
 }
 
