@@ -7,14 +7,24 @@
     Zachary Balaisis - 2008-11-01
 -->
 <head>
+  <div class="theme-switch-container"> 
+    <label class="theme-slider" for="checkbox"> 
+        <input type="checkbox" id="checkbox" /> 
+        <div class="round slider"></div> 
+    </label>  
+  </div>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gaetan-Gervais | Athletics</title>
+  <title>Gaetan-Gervais | Athletics tesst</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./asset/img/mascot.png" rel="icon">
+  
+  
+  
+  <link href="./assets/img/flag.png" rel="icon">
+  
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -65,6 +75,7 @@
     letter-spacing: 15px;
     font-size: 75px;
     grid-column: 3;
+    padding-bottom: 20px;
   }
 
   .my-5 {
@@ -107,6 +118,27 @@
     padding: 60px 0 0 0;
   }
 
+  @media (max-width: 1024px) {
+    .my-5 {
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 35% 65%;
+      height: 100vh;
+    }
+    .HeroIMG {
+      grid-row: 2;
+      grid-column: span 3;
+      width: 90%;
+      height: auto
+    }
+    .paragraphContainer {
+      grid-column: 2;
+    }
+  }
+  @media (max-width: 560px) {
+    
+  }
+
+
 
 </style>
 
@@ -140,8 +172,6 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="courses.html">Get Started</a>
-
     </div>
   </header>
 
@@ -149,11 +179,11 @@
   
     <div class="px-4 py-5 my-5 text-center">
   
-    <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
-    <div class="paragraphContainer">
-      <h1 class="display-5 fw-bold text-body-emphasis AthleticH1">Athletics</h1>
-      <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
-    </div>
+      <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
+      <div class="paragraphContainer">
+        <h1 class="display-5 fw-bold text-body-emphasis AthleticH1">Athletics</h1>
+        <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
+      </div>
     </div>
     <div class="white1"></div>
     <div class="white2"></div>
@@ -169,36 +199,36 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
-              <img src="./assets/img/sports/basketball.png" class="icon basketballicon">
-              <h3><a href="./sports/Basketball.html" class="stretched-link">Basketball</a></h3>
+              <img src="./assets/img/sports/basketball_5294552.png" class="icon basketballicon">
+              <h3><a href="/Sport/Basketball.html" class="stretched-link">Basketball</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/volleyball_451634.png" class="icon  volleyballicon">
-              <h3><a href="./sports/Volleyball.html" class="stretched-link">Volleyball</a></h3>
+              <h3><a href="/Sport/Volleyball.html" class="stretched-link">Volleyball</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/ball_4320612.png" class="icon soccericon">
-              <h3><a href="./sports/Soccer.html" class="stretched-link">Soccer</a></h3>
+              <h3><a href="/Sport/Soccer.html" class="stretched-link">Soccer</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/badminton_1633459.png" class="icon badmintonicon">
-              <h3><a href="./sports/Badminton.html" class="stretched-link">Badminton</a></h3>
+              <h3><a href="/Sport/Badminton.html" class="stretched-link">Badminton</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/rugby_7603539.png" class="icon footballicon">
-              <h3><a href="./sports/Flag.html" class="stretched-link">Flag Football
+              <h3><a href="/Sport/Flag.html" class="stretched-link">Flag Football
                 
               </a></h3>
             </div>
@@ -207,21 +237,21 @@
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/swimming_1800685.png" class="icon swimmingicon">
-              <h3><a href="./sports/Natation.html" class="stretched-link">Natation</a></h3>
+              <h3><a href="/Sport/Natation.html" class="stretched-link">Natation</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/running-track_4509197.png" class="icon trackicon">
-              <h3><a href="./sports/Athletisme.html" class="stretched-link">Athletisme</a></h3>
+              <h3><a href="/Sport/Athletisme.html" class="stretched-link">Athletisme</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="features-item">
               <img src="./assets/img/sports/ice-hockey_4701744.png" class="icon hockeyicon">
-              <h3><a href="./sports/Hockey.html" class="stretched-link">Hockey</a></h3>
+              <h3><a href="/Sport/Hockey.html" class="stretched-link">Hockey</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
