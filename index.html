@@ -9,7 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/flag.png" rel="icon">
   <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -125,14 +125,21 @@
 </head>
 
 <body>
-
+  <div class="theme-switch-container"> 
+  <label class="theme-slider" for="checkbox"> 
+      <input type="checkbox" id="checkbox" /> 
+      <div class="round slider"></div> 
+  </label>  
+</div>
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img class="mascot" src="./assets/img/mascot.png"/>
         <h1 class="">GAGE</h1>
+        
       </a>
+      
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -151,8 +158,10 @@
           <li><a href="./FAQ.html">FAQ</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
+        
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
     </div>
   </header>
 
@@ -191,15 +200,16 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
             <img src="./assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
             <h3> À propos de nous</h3>
+
             <ul>
               <li><i class="bi bi-check-circle"></i> <span>We are pretty awesome.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Things number 2.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Things number 3.</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Try to have text that fills the entirety of this section.</span></li>
             </ul>
+            
             <a href="#" class="read-more"><span>En Savoir Plus</span><i class="bi bi-arrow-right"></i></a>
 
             <a href="#" class="where-to-find-us"><span>Ou Tu Peut Nous Trouver</span><i class="bi bi-arrow-right"></i></a>
