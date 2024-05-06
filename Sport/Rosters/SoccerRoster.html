@@ -84,6 +84,31 @@ Pages Needed:
     font-weight: bolder;
   }
 
+  .list-group {
+    width: 100%;
+  }
+
+  .stat {
+    display: flex;
+    justify-content: center;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+
+  }
+
+  .placeholderStat {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  
+
+  
+
+
 
   
 </style>
@@ -177,35 +202,22 @@ Pages Needed:
   </main>
 
   <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item joueurList placeholderStat">Joueur</li>
+    <li class="list-group-item posList placeholderStat">POS</li>
+    <li class="list-group-item noList placeholderStat">NO</li>
+    <li class="list-group-item htList placeholderStat">HT</li>
+    <li class="list-group-item wtList placeholderStat">WT</li>
+    <li class="list-group-item dobList placeholderStat">DOB</li>
   </ul>
   <ul class="list-group list-group-horizontal-sm">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+    <li class="list-group-item joueurListStat joueurList stat">Matthew Bolletta</li>
+      <li class="list-group-item posListStat posList stat">G</li>
+      <li class="list-group-item noListStat noList stat">74</li>
+      <li class="list-group-item htListStat htList stat">5'5</li>
+      <li class="list-group-item wtListStat wtList stat">135 lbs</li>
+      <li class="list-group-item dobListStat dobList stat">August 4 2008</li>
   </ul>
-  <ul class="list-group list-group-horizontal-md">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-  <ul class="list-group list-group-horizontal-lg">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-  <ul class="list-group list-group-horizontal-xl">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
-  <ul class="list-group list-group-horizontal-xxl">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-  </ul>
+
 
 
   <footer id="footer" class="footer position-relative">
