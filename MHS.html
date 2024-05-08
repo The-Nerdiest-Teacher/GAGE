@@ -69,6 +69,89 @@
       max-height:100px;
       max-width:100px;
     }
+
+    :root {
+  --primary: #227093;
+  --secondary: #ff5252;
+  --background: #eee;
+  --highlight: #ffda79;
+  /* Theme color */
+  --theme: var(--primary);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* Core styles/functionality */
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tab__label,
+.tab__close {
+  display: flex;
+  color: white;
+  background: var(--theme);
+  cursor: pointer;
+}
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab input:not(:checked) + .tab__label:hover::after {
+  animation: bounce .5s infinite;
+}
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
   </style>
   <!-- =======================================================
   * Template Name: Mentor
@@ -158,124 +241,43 @@
                     <p><a>11/12</a></p>
                   </div>                        
                   <div class="course-info d-flex justify-content-between align-items-center">
-                    <div class="partenaires">
-                    <h5>Nos partenaires</h5>
-                    <br>
-                    <img src="./assets/img/spiria_logo.jpg">
-                    <img src="./assets/img/siemens_logo.jpg">
-                    <img src="./assets/img/sheridan_logo.png">
-                    <img src="./assets/img/viamonde_logo.jpg">
-                    <img src="./assets/img/cfcc_logo.png">
-                    <img src="./assets/img/liuna_logo.png">
-                  </div>
+                    
                   </div>
 
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Accordion Item #1
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Accordion Item #2
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="accordion" id="accordionExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Crédits requis
-                          </button>
-                          
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <strong>Credits de base</strong>
-                          <hr>
-                            <ul>
-                            <li>Arts visuelle - 11e année (AVI3M)</li>
-
-                            <li>Technologie de communication - 11e et 12e année (TGJ3O, TGJ3M, TGJ4O, TGJ4M)</li>
-                            
-                            <li>Informatique - 11e & 12e année (ICS3U, ICS4U)</li>
-                            
-                            <li>Computer Engineering - Grade 11 & 12 (TEJ3M, TEJ4M)</li>
-                            
-                            <li>Technologie de Design - 11e & 12e année (TDJ3M, TDJ4M)</li>
-                            
-                            <li>Annuaire et production papier - 11e et 12e année  (TGG3M, TGG4M)</li>
-                          </ul>
-                          <h6>*Dépendant du personnel pour l'année scolaire nous pouvons offrir une variété de cours*</h6>
+                      <section class="accordion accordion--radio">
+                        <div class="tab">
+                          <input type="radio" name="accordion-2" id="rd1">
+                          <label for="rd1" class="tab__label">Radio</label>
+                          <div class="tab__content">
+                            <p>If you want to have only one tab open, you can use <code>&lt;input type="checkbox"&gt;</code>.</p>
                           </div>
-                          
                         </div>
-                      </div>
-                      
+                        <div class="tab">
+                          <input type="radio" name="accordion-2" id="rd2">
+                          <label for="rd2" class="tab__label">Open single</label>
+                          <div class="tab__content">
+                            <div class="partenaires">
+                              <h5>Nos partenaires</h5>
+                            <br>
+                            <img src="./assets/img/spiria_logo.jpg">
+                            <img src="./assets/img/siemens_logo.jpg">
+                            <img src="./assets/img/sheridan_logo.png">
+                            <img src="./assets/img/viamonde_logo.jpg">
+                            <img src="./assets/img/cfcc_logo.png">
+                            <img src="./assets/img/liuna_logo.png">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab">
+                          <input type="radio" name="accordion-2" id="rd3">
+                          <label for="rd3" class="tab__close">Close open tab &times;</label>
+                        </div>
+                      </section>
                             
                           </div>
                         </div>
                       </div>
           
-                    </div>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
-                          </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Accordion Item #3
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                      </div>
                     </div>
                   </div>
       
@@ -316,36 +318,7 @@
                     <p><a> 11e et 12e </a></p>
                   </div>
       
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Crédits requis
-                        </button>
-                        
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>Credits de base</strong>
-                        <hr>
-                          <ul>
-                          <li>Arts visuelle - 11e année (AVI3M)</li>
-
-                          <li>Technologie de communication - 11e et 12e année (TGJ3O, TGJ3M, TGJ4O, TGJ4M)</li>
-                          
-                          <li>Informatique - 11e & 12e année (ICS3U, ICS4U)</li>
-                          
-                          <li>Computer Engineering - Grade 11 & 12 (TEJ3M, TEJ4M)</li>
-                          
-                          <li>Technologie de Design - 11e & 12e année (TDJ3M, TDJ4M)</li>
-                          
-                          <li>Annuaire et production papier - 11e et 12e année  (TGG3M, TGG4M)</li>
-                        </ul>
-                        <h6>*Dépendant du personnel pour l'année scolaire nous pouvons offrir une variété de cours*</h6>
-                        </div>
-                        
-                    
-                  </div> 
+             
                   </div>
                   </div>
                 </div>
