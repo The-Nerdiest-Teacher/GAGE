@@ -61,17 +61,7 @@
       margin: 0%;
     }
     
-    .hero>h2 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 700;
-    }
-    
-    .hero>p {
-      color: rgba(var(--default-color-rgb), 0.8);
-      margin: 10px 0 0 0;
-      font-size: 24px;
-    }
+
     
     .nos-realisations{
      background-color: #114828;
@@ -116,8 +106,55 @@
     .about .content .where-to-find-us:hover i {
       margin-left: 10px;
     }
+
+    @media (max-width: 992px) {
+  .tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .tabs .nav-link.active {
+    color: black;
+    background: white;
+  }
+}
     
+
+    @media (max-width: 480px){
+      .hero>img{
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 65%;
+      object-fit:fill;
+      z-index: 1;
+    }
+    .hero{
+      background-color: #114828;
+      border: 2px solid black;
+    }
+    .hero>.container {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      right: 10px;
+      top: 180px;
+      z-index: 3;
+      inline-size: 350px;
     
+    }
+
+    .hero>.container>div>a{
+      visibility: hidden;
+    }
+
+    .where-to-find-us{
+      margin-top: 8px;
+    }
+    
+
+    }
     
     
   </style>
@@ -157,6 +194,10 @@
           <li><a href="./merch.html">Boutique</a></li>
           <li><a href="./FAQ.html">FAQ</a></li>
           <li><a href="./contact.html">Contact</a></li>
+          
+      
+   
+           
         </ul>
         
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -178,13 +219,13 @@
 
     <section id="hero" class="hero section">
 
-      <img src="./assets/img/CSV Ã‰cole secondaire GaÃ©tan-Gervais_RGB.jpg" alt="" data-aos="fade-in">
+      <img src="assets\img\CSV Ã‰cole secondaire GaÃ©tan-Gervais_RGB.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="">A Gage, On S'engage</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Nous offerons une education de qualité et diverse tout en francais.</p>
+        <h2 data-aos="fade-up" data-aos-delay="100" class="engage-backgrounds">A Gage, On S'engage</h2>
+        <p data-aos="fade-up" data-aos-delay="200" class="engage-backgrounds">Nous offerons une education de qualité et diverse tout en francais.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="./courses.html" class="btn-get-started">Nos Courses</a>
+          <a href="./courses.html" class="btn-get-started engage-backgrounds">Nos Courses</a>
         </div>
       </div>
 
@@ -204,10 +245,10 @@
             <h3> À propos de nous</h3>
 
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>We are pretty awesome.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Things number 2.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Things number 3.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Try to have text that fills the entirety of this section.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Notre école est fière de dire qu'on est la meilleur école secondaire francaise dans la province, peut être même le monde.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Les élèves sont la priorité numero 1, et ils ont la liberté de choisir leur chemin et d'exprimer comment ils veulent.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Nous ont deja employer tous les nouveau technologies pour utilisation dans nos cours. comme des utilisation des utilisation des intelligence artificielle pour aider avec les traveaux.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>nos personnel sont engagés dans leur travaille, et met un grand effort pour rendre le reseignement des élève intuitive et plaisent.</span></li>
             </ul>
             
             <a href="#" class="read-more"><span>En Savoir Plus</span><i class="bi bi-arrow-right"></i></a>
@@ -244,7 +285,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="19" data-purecounter-duration="1" class="purecounter"></span>
               <p class="">Équipes de Sports</p>
             </div>
           </div><!-- End Stats Item -->
@@ -276,58 +317,58 @@
 
         <div class="row gy-3">
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
-              <h3>Valeur 1</h3>
+              <h3>Compassion</h3>
               
-                <li>write an explenation of what this very vague "value" is.</li>
+                <li>Nous croit que comprendre les difficulté et les différences des autres et important pour collaborer ensemble. On accepte tous avec des bras ouvertes et on assure qu'ils sont à l'aise</li>
                 <br>
 
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">En Savoir Plus</a>
+                <a href="about.html" class="btn-buy">En Savoir Plus</a>
               </div>
             </div>
           </div><!-- End Value -->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
-              <h3>Valeur 2</h3>
+              <h3>Évolution</h3>
               
-                <li>write an explenation of what this very vague "value" is.</li>
+                <li>Nous croit que la change et innovation de technologie et éducation est positive, et on accueillez-les avec fierté et excitation. On assure que notre école n'est pas figé dans le temps.</li>
                 <br>
 
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">En Savoir Plus</a>
+                <a href="about.html" class="btn-buy">En Savoir Plus</a>
               </div>
             </div>
           </div><!-- End Value-->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
-              <h3>Valeur 3</h3>
+              <h3>Communauté</h3>
               
-                <li>write an explenation of what this very vague "value" is.</li>
+                <li>nous nous efforçons toujours de crée un communauté dans notre école. nous plannifie plusieur activité pour rassembler tout l'école pour des activités comme gage en couleur.</li>
                 <br>
 
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">En Savoir Plus</a>
+                <a href="about.html" class="btn-buy">En Savoir Plus</a>
               </div>
             </div>
           </div><!-- End Value-->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
-              <h3>Valeur 4</h3>
+              <h3>Adaptabilité</h3>
               
-                <li>write an explenation of what this very vague "value" is.</li>
+                <li>nous compense pour notre école de petite taille en accordant une attention supplémentaire à chaque élève pour s'assurer qu'ils s'épanouissent durant leur éducation. </li>
                 <br>
 
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">En Savoir Plus</a>
+                <a href="about.html" class="btn-buy">En Savoir Plus</a>
               </div>
             </div>
           </div><!-- Value -->
@@ -343,7 +384,7 @@
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us">
 
-      <div class="container">
+      <div class="container item-background">
 
         <div class="row gy-4">
 
@@ -351,8 +392,7 @@
             <div class="why-box">
               <h3>Ce Qui Nous Destingue</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Dans notre école, on crée un écosystem avec des activités speciaux et exposée que ont fait avec les élèves pour ameliorer non seul la morale, mais aussi encourager la competition et l'effort dans tous ce qu'on fait. Ceci sont plusieurs choses notre école fait pour nous distinguer des autres écoles.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -449,7 +489,7 @@
 
       <section id="tabs" class="tabs section">
 
-        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="container aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="100">
 
           <h2 class="nos-realisations">Nos Realisations</h2>
 

@@ -78,6 +78,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+/*--dark mode--*/
 .header{
   color: var(--default-color);
   background-color: var(--background-color);
@@ -104,7 +105,11 @@ h6 {
   --text-color: #e1e1ff; 
   --background-color: #161625; 
   --heading-color: #818cab;
-  --ul-background-color: #161625; 
+  --ul-background-color: #161625;
+  --nav-color: white ; 
+  --default-color-rgb: white;
+  --default-color: rgb(155, 155, 155);
+  --item-background-color: rgb(17, 14, 28);
 } 
 body { 
   background-color: var( #f0ece2); 
@@ -192,6 +197,8 @@ li:hover {
   color: var(--contrast-color);
   background: rgba(var(--accent-color-rgb), 0.85);
 }
+
+
 
 @media (max-width: 1200px) {
   .header .logo {
@@ -304,7 +311,7 @@ li:hover {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: red;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -749,6 +756,8 @@ li:hover {
   bottom: 15px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -1012,7 +1021,7 @@ section,
 # Counts Section
 --------------------------------------------------------------*/
 .counts {
-  --background-color: #f6f7f6;
+  background-color: var(--item-background-color);
   padding: 25px 0;
 }
 
@@ -2097,8 +2106,10 @@ H1{
     --bs-btn-disabled-border-color: #114828;
     --bs-gradient: none;
 }
-nav{
-  background-color: #f0ece2;
+
+.item-background {
+  background-color: var(--item-background-color);
+  background: var(--item-background-color);
 }
 
 /*--------------------------------------------------------------
