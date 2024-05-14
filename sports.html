@@ -7,14 +7,24 @@
     Zachary Balaisis - 2008-11-01
 -->
 <head>
+  <div class="theme-switch-container"> 
+    <label class="theme-slider" for="checkbox"> 
+        <input type="checkbox" id="checkbox" /> 
+        <div class="round slider"></div> 
+    </label>  
+  </div>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gaetan-Gervais | Athletics</title>
+  <title>Gaetan-Gervais | Athletics tesst</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./asset/img/mascot.png" rel="icon">
+  
+  
+  
+  <link href="./assets/img/flag.png" rel="icon">
+  
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -63,13 +73,17 @@
     font-weight: 700;
     font-style: normal;
     letter-spacing: 15px;
-    font-size: 75px;
+    font-size: 5em;
     grid-column: 3;
+    padding-bottom: 20px;
+  }
+  .AthleticH2 {
+    width: fit-content;
   }
 
   .my-5 {
     margin: 0%;
-    padding: 0%;
+    padding: 20px;
     display: grid;
     grid-template-columns: 50% 10% 30% 10%;
   }
@@ -107,6 +121,27 @@
     padding: 60px 0 0 0;
   }
 
+  @media (max-width: 1024px) {
+    .my-5 {
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 35% 65%;
+      height: 100vh;
+    }
+    .HeroIMG {
+      grid-row: 2;
+      grid-column: span 3;
+      width: 90%;
+      height: auto
+    }
+    .paragraphContainer {
+      grid-column: 2;
+    }
+  }
+  @media (max-width: 560px) {
+    
+  }
+
+
 
 </style>
 
@@ -140,20 +175,20 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="courses.html">Get Started</a>
-
     </div>
   </header>
 
   <main class="main">
   
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="my-5">
   
-    <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
-    <div class="paragraphContainer">
-      <h1 class="display-5 fw-bold text-body-emphasis AthleticH1">Athletics</h1>
-      <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
-    </div>
+      <img class="d-block mx-auto mb-4 HeroIMG" src="./assets/img/sports/Water.jpg" alt="" width="72" height="57">
+      <div class="paragraphContainer">
+        <div class="AthleticH2">
+          <h1 class="text-body-emphasis AthleticH1">Athletics</h1>
+        </div>
+        <p class="MainP">Explorez l'athlétisme à l'école Gaetan-Gervais, où la passion et la performance se rencontrent sur le terrain. Notre programme met l'accent sur le travail d'équipe et la discipline, offrant aux étudiants une expérience sportive enrichissante. Rejoignez-nous pour vivre l'esprit sportif chez Gaetan-Gervais !</p>
+      </div>
     </div>
     <div class="white1"></div>
     <div class="white2"></div>
