@@ -67,6 +67,7 @@
      background-color: #114828;
      color: white;
      padding: 8px;
+     
     }
     
     .nos-valeurs{
@@ -155,8 +156,78 @@
     
 
     }
+    .why-us .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  color: var(--default-color-rgb)
+}
+
+
+.nav-tabs .nav-link.active {
+    color: var(--text-color);
+    background-color: var(--background-accent-color);
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+}
     
-    
+.about>div>div>div>h3{
+  color: var(--text-color);
+}
+
+.tabs>div>div>div>div>div>div>div>h3{
+  color: var(--text-color);
+}
+
+.features .features-item {
+  background-color: var(--item-background-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid rgba(var(--default-color-rgb), 0.1);
+  position: relative;
+}
+
+.nous-distingue{
+padding: 0%;
+}
+
+.distinge-box{
+margin-top: 0%;
+}
+
+.pricing-item{
+  background-color: var(--item-background-color);
+}
+
+.features .features-item h3 a {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.pricing .pricing-item h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--default-color-rgb);
+  background: rgba(var(--default-color-rgb), 0.05);
+}
+
+@media (max-width: 992px) {
+  .tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .tabs .nav-link.active {
+    color: var(--accent-color);
+    background: var(--background-accent-color);
+  }
+}
+
+
   </style>
 
 </head>
@@ -317,7 +388,7 @@
 
         <div class="row gy-3">
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
               <h3>Compassion</h3>
               
@@ -331,11 +402,11 @@
             </div>
           </div><!-- End Value -->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
               <h3>Évolution</h3>
               
-                <li>Nous croit que la change et innovation de technologie et éducation est positive, et on accueillez-les avec fierté et excitation. On assure que notre école n'est pas figé dans le temps.</li>
+                <li>Nous croit que la change et innovation de technologie et éducation est positive, et on accueillez-les avec fierté et excitation. On assure que notre école n'est jamais figé dans le temps.</li>
                 <br>
 
               </ul>
@@ -345,7 +416,7 @@
             </div>
           </div><!-- End Value-->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
               <h3>Communauté</h3>
               
@@ -359,7 +430,7 @@
             </div>
           </div><!-- End Value-->
 
-          <div class="col-xl-3 col-lg-6 aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-xl-3 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item">
               <h3>Adaptabilité</h3>
               
@@ -384,15 +455,15 @@
     <!-- Why Us Section -->
     <section id="why-us" class="section why-us">
 
-      <div class="container item-background">
+      <div class="container item-background nous-distingue">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 distinge-box" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
               <h3>Ce Qui Nous Destingue</h3>
               <p>
-                Dans notre école, on crée un écosystem avec des activités speciaux et exposée que ont fait avec les élèves pour ameliorer non seul la morale, mais aussi encourager la competition et l'effort dans tous ce qu'on fait. Ceci sont plusieurs choses notre école fait pour nous distinguer des autres écoles.
+                Dans notre école, on crée un écosystem avec des activités speciaux et des exposée qu'on fait pour les élèves qui ameliore non seul la morale, mais aussi encourager la competition et l'effort dans tous ce qu'on fait. Ceci sont plusieurs choses notre école fait pour nous distinguer des autres écoles.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -403,30 +474,28 @@
           <div class="col-lg-8 d-flex align-items-stretch">
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-              <div class="col-xl-4">
+              <div class="col-xl-6">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-clipboard-data"></i>
-                  <h4>Gagetech</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4>GageTech</h4>
+                  <p>GageTech est une initiative novatrice donnant les élèves de 6e année de nos écoles nouricièrres de vivre un camp technlogique à notre école
+                    pendant une fin de semaine remplit d'activité mené par nos élèves de secondaire.
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
 
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-gem"></i>
                   <h4>Gage En Couleur</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <p>
+                    Gage en Couleur est un competition mener par notre conseil et leadership programme ou tous les 6 niveau joue dans des jeux et porte la couleur de leur niveau pour amasser des points. 
+                    L'équipe gangante peut aller a canada's wonderland a la fin de l'année gratuitement.
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
 
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>third thing here</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                  
-                </div>
-              </div><!-- End Icon Box -->
+
 
             </div>
           </div>
@@ -473,7 +542,7 @@
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
             <div class="features-item">
               <i class="bi bi-command" style="color: #b2904f;"></i>
-              <h3><a href="./contact.html" class="stretched-link">Q et R</a></h3>
+              <h3><a href="./FAQ.html" class="stretched-link">FAQ</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
@@ -489,12 +558,12 @@
 
       <section id="tabs" class="tabs section">
 
-        <div class="container aos-init aos-animate item-background" data-aos="fade-up" data-aos-delay="100">
+        <div class="container aos-init aos-animate " data-aos="fade-up" data-aos-delay="100">
 
           <h2 class="nos-realisations">Nos Realisations</h2>
 
   
-          <div class="row">
+          <div class="row item-background">
             <div class="col-lg-3">
               <ul class="nav nav-tabs flex-column" role="tablist">
                 <li class="nav-item" role="presentation">

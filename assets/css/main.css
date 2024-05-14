@@ -29,6 +29,7 @@
   --accent-color-rgb: 95, 207, 128;
   --contrast-color: #f0ece2;
   --contrast-color-rgb: 255, 255, 255;
+  --background-accent-color: rgb(247, 247, 247);
 }
 
 /* Nav Menu Colors */
@@ -110,6 +111,8 @@ h6 {
   --default-color-rgb: white;
   --default-color: rgb(155, 155, 155);
   --item-background-color: rgb(17, 14, 28);
+  --background-accent-color: #13131f;
+  
 } 
 body { 
   background-color: var( #f0ece2); 
