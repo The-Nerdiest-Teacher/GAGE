@@ -5,6 +5,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle, addEventListener('click', function() {
+  this.document.body.classList.toggle('dark-mode')
+});
 const toggleSwitch = 
     document.querySelector('.theme-slider input[type="checkbox"]');
 function switchTheme(e) { 
