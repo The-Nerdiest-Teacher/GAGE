@@ -34,6 +34,9 @@
   <link href="./assets/css/main.css" rel="stylesheet">
   
   <style>
+    h5{
+      color: #33332f;
+    }
     .course-item{
       text-align:right;
     }
@@ -100,10 +103,10 @@
 .tab__content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.35s;
+  transition: all 0.55s;
 }
 .tab input:checked ~ .tab__content {
-  max-height: 10rem;
+  max-height: 30rem;
 }
 .tab__content::after{
   min-height: fit-content;
@@ -151,8 +154,8 @@
 .accordion--radio {
   --theme: var(--secondary);
   min-height: fit-content;
-
 }
+
 
 /* Arrow animation */
 .tab input:not(:checked) + .tab__label:hover::after {
@@ -276,9 +279,9 @@
       
                   <div class="course-info d-flex justify-content-between align-items-center bar-on-right">
                     <h5>Années d'étude</h5>
-                    <p><a>11/12</a></p>
+                    <p><a>11e et 12e</a></p>
                   </div>                        
-
+                  <hr>
 
                       <section class="accordion accordion--radio">
                         <div class="tab">
@@ -343,7 +346,7 @@
               </div>
       
             </div>
-            
+            <hr>
       
           </section>
           <section id="courses-course-details" class="courses-course-details section">
@@ -402,7 +405,7 @@
                     <h5>Années d'étude</h5>
                     <p><a> 11e et 12e </a></p>
                   </div>
-      
+      <hr>
              
                   </div>
                   </div>
