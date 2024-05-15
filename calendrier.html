@@ -75,10 +75,69 @@
       font-weight: 700;
     }
 
-    h4 {
-      color: black;
+    .footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
+    .footer-top {
+      height: 80px;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 10px;
+    }
+
+    .tier {
+      width: 99%;
+      font-family: Raleway;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    #tier1 {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 400px;
+    }
+
+    #tier2 {
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+
+    #tier31 {
+      padding-right: 20px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }     
+
+    #socials {
+      padding: 10px;
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      width: max-content;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    .flag-img {
+      height: 40px;
+      width: 65px; 
+    }
+
+    
     @media (max-width: 750px) {
       .container1 {
         padding-right: 0px;
@@ -94,10 +153,17 @@
         display: block;
       }
 
-    }
-  </style>
-</head>
+      #tier1 {
+        display: none;
+      }
 
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+  </style>
+  <head>
 <body>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
@@ -164,72 +230,27 @@
     <p></p>
   </main>
 
-  <footer id="footer" class="footer position-relative"><!--footer-->
+  <footer id="footer" class="footer position-relative"><!--footer--> 
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="./index.html" class="logo d-flex align-items-center">
-            <h2 class="gage">GAGE</h2>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>1075 McCraney St E,</p>
-            <p>Oakville, ON L6H 1H9</p>
-            <p class="mt-3"><strong>Téléphone:</strong> <span>phone here</span></p>
-            <p><strong>Couriel:</strong> <span>email here</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+    <div class="footer-top">
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liens Utiles</h4>
-          <ul>
-            <li><a href="https://app.myblueprint.ca/student/dashboard">MyBlueprint</a></li>
-            <li><a href="https://hourrepublic.com/dashboard">Hour Republic</a></li>
-            <li><a href="https://outlook.live.com/mail/0/?actSwt=true">Outlook</a></li>
-            <li><a href="https://www.office.com/?auth=2">Microsoft 365</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="./forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
+      <div id="tier1" class="tier">
+        <img class="flag-img" src="./assets/img/flag.png" alt="flag logo">
+       
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1">SiteName</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div id="tier2" class="tier">
+        <div class="social-links d-flex mt-4">
+          <a href="https://www.facebook.com/EEGaetanGervais/"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/conseil_gage/"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
+
+      <div id="tier3" class="tier">
+        <p class="copy-stuff">© <span>Copyright</span> <strong class="px-1">Gaétan-Gervais</strong> <span>Tous droits réservés</span></p>
+      </div>
+     
+    
     </div>
 
   </footer>
