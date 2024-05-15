@@ -117,7 +117,7 @@
       border-collapse: collapse;
       margin: 25px 0;
       font-size: 18px;
-      text-align: left;
+ 
   }
   th, td {
       padding: 12px;
@@ -126,16 +126,17 @@
   th {
       background-color: #f2f2f2;
   }
-  .tr{ 
-    align-contents: center;
+  .chart{ 
+    display: flex;
     justify-content: center;
   }
 </style>
 </head>
 <body>
+  <div class="chart">
 <h2>Size Chart</h2>
 <table>
-  <thead>
+  <thead >
       <tr>
           <th>Size</th>
           <th>Chest (inches)</th>
@@ -164,6 +165,7 @@
       </tr>
   </tbody>
 </table>
+</div>
 </body>
 <!-- Related items section-->
 
