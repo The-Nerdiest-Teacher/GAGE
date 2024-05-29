@@ -34,9 +34,6 @@
   <link href="./assets/css/main.css" rel="stylesheet">
   
   <style>
-    .container{
-      justify-content: center;
-    }
     h5{
       color: #33332f;
     }
@@ -51,6 +48,7 @@
     }
     .accordion-item{
       background-color: rgb(253, 252, 252);
+      border-radius: 5%;
     }
     .accordion-button{
       background: rgba(var(--default-color-rgb), 0.05);
@@ -83,7 +81,6 @@
       max-height:100px;
       max-width:100px;
     }
-
     :root {
   --primary: #227093;
   --secondary: #114828;
@@ -113,10 +110,17 @@
 }
 .tab__content::after{
   min-height: fit-content;
+  color:black;
 
 }
-
+.tab{
+  color:white;
+  border-radius:5%;
+}
 /* Visual styles */
+li, small{
+  color:black;
+}
 .accordion {
   color: var(--theme);
   border-radius: 5%;
@@ -133,6 +137,7 @@
 .tab__label {
   justify-content: space-between;
   padding: 1rem;
+  color;white;
 }
 .tab__label::after {
   content: "\276F";
@@ -141,6 +146,7 @@
   text-align: center;
   transform: rotate(90deg);
   transition: all 0.35s;
+  border: #114828;
 }
 .tab input:checked + .tab__label::after {
   transform: rotate(270deg);
@@ -284,8 +290,6 @@
                     <h5>Années d'étude</h5>
                     <p><a>11e et 12e</a></p>
                   </div>                        
-                  <hr>
-
                       <section class="accordion accordion--radio">
                         <div class="tab">
                           <input type="radio" name="accordion-2" id="rd1">
@@ -381,7 +385,7 @@
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="assets/img/mhs-sports-picture.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                           <h5>Third slide label</h5>
                           <p>Some representative placeholder content for the third slide.</p>
