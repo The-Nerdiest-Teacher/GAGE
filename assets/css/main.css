@@ -1662,10 +1662,7 @@ section,
 .tabs .details p:last-child {
   margin-bottom: 0;
 }
-.collapse{
-  visibility: hidden; 
-  display: none;
- }
+
 .ul-li{
    visibility: visible; 
    display: inline-block;
@@ -1685,16 +1682,13 @@ section,
 
 @media( min-width: 1080px){
       
-.collapse{
-  visibility: hidden; 
-  display: none;
+
  }
 .ul-li{
    visibility: visible; 
    display: inline-block;
   }
 
-  }
 
 
 /*--------------------------------------------------------------
